@@ -1,4 +1,3 @@
-// #let cvdata = yaml("example.yml")
 
 // set rules
 #let set_rules(doc) = {
@@ -31,32 +30,32 @@
     doc
 }
 
-#let share_header() = {
+#let share_header(data) = {
   block(
     width: 80%,
     align(left, text(24pt)[
-      *#lorem(5)*
+      *#data.title*
     ])
   )
 
   block(
     width: 80%,
     align(left, text(12pt)[
-      Written by \@mangkoran
+      Written by #data.author
     ])
   )
 }
 
-#let share_content() = [
-  #lorem(30)
+#let share_content(data) = [
+  #data.abstract
 
-  #for value in (1, 2, 3) [
+  #for item in data.items [
     + #box(
         fill: luma(200),
-        outset: (x: 1pt, y: 4pt),
+        outset: (x: 1pt, y: 2pt),
         radius: 2pt, 
-        [Foo.]
-      ) #lorem(30)
+        [*#item.title.*]
+      ) #item.description
   ]
 ]
 
@@ -66,6 +65,6 @@
     fill: luma(200),
     inset: 4pt,
     radius: 2pt,
-    [Foo #h(1fr) #datetime.today().display()],
+    [#h(1fr) #datetime.today().display("[day]/[month]/[year repr:last_two]")],
   )
 }
