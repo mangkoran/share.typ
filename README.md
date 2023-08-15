@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="LICENSE">
-    <img alt="Apache-2 License" src="https://img.shields.io/badge/license-Apache%202-brightgreen"/>
+    <img alt="MIT License" src="https://img.shields.io/badge/License-MIT_License-red"/>
   </a>
 </p>
 
