@@ -12,6 +12,7 @@
 
 #let share_init(doc) = {
     doc = set_rules(doc)
+    doc = show_rules(doc)
     doc = custom_rules(doc)
 
     doc

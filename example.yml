@@ -7,7 +7,7 @@ abstract: >
   social media thanks to `typst.app` simple yet powerful syntax. Below are the
   steps to start creating awesome post using `share.typ`:
 items:
-- title: Add this repo as git submodule
+- title: Add mangkoran/share.typ as git submodule
   description: >
     By adding `share.typ` repo as git submodule, any upstream changes can be
     pulled easily. You can modify several style variables and even override
@@ -15,8 +15,9 @@ items:
 - title: Copy example files to repo root directory
   description: >
     Copy (and rename if you want) `example.typ` and `example.yml` to your repo
-    root directory. Use these files as template/starting point for your
-    post.
+    root directory. For post YAML file you can create a new directory (`post`
+    or else) for better organization. Don't forget to update the YAML import
+    to reflect this. Use these files as template/starting point for your post.
 - title: Compile content file
   description: >
     Typst compiles to PDF by default. To compile Typst to PNG, use `typst
@@ -24,4 +25,4 @@ items:
 - title: Share in social media
   description: >
     Also let your followers know that the post was made using `typst.app`
-    (and this repo) 😁
+    (and `share.typ`) 😁
