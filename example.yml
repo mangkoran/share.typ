@@ -3,9 +3,9 @@
 title: How to Use `share.typ` 📝
 author: "@mangkoran"
 abstract: > 
-  With `share.typ`, you can quickly create a beautiful short writings for sharing
-  in social media, utilizing `typst` simple yet powerful syntax. Below are the
-  steps to use `share.typ`:
+  With `share.typ`, you can quickly create beautiful short writings to share in
+  social media thanks to `typst.app` simple yet powerful syntax. Below are the
+  steps to start creating awesome post using `share.typ`:
 items:
 - title: Add this repo as git submodule
   description: >
@@ -16,8 +16,12 @@ items:
   description: >
     Copy (and rename if you want) `example.typ` and `example.yml` to your repo
     root directory. Use these files as template/starting point for your
-    content.
+    post.
 - title: Compile content file
   description: >
-    typst compiles to PDF by default. To compile typst to PNG, use `typst
-    compile <content-file>.typ <output>.png`.
+    Typst compiles to PDF by default. To compile Typst to PNG, use `typst
+    compile <your-post-content>.typ <output>.png`.
+- title: Share in social media
+  description: >
+    Also let your followers know that the post was made using `typst.app`
+    (and this repo) 😁
