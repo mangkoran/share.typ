@@ -1,4 +1,3 @@
-
 // set rules
 #let set_rules(doc) = {
   set page(
@@ -34,7 +33,7 @@
   block(
     width: 80%,
     align(left, text(24pt)[
-      *#data.title*
+      *#eval(data.title, mode: "markup")*
     ])
   )
 
@@ -47,15 +46,15 @@
 }
 
 #let share_content(data) = [
-  #data.abstract
+  #eval(data.abstract, mode: "markup")
 
   #for item in data.items [
     + #box(
         fill: luma(200),
         outset: (x: 1pt, y: 2pt),
         radius: 2pt, 
-        [*#item.title.*]
-      ) #item.description
+        [*#eval(item.title, mode: "markup").*]
+      ) #eval(item.description, mode: "markup")
   ]
 ]
 
