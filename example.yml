@@ -1,0 +1,23 @@
+## yaml-language-server: $schema=https://raw.githubusercontent.com/jskherman/cv.typ/main/cv.typ.schema.json
+
+title: How to Use `share.typ` 📝
+author: "@mangkoran"
+abstract: > 
+  With `share.typ`, you can quickly create a beautiful short writings for sharing
+  in social media, utilizing `typst` simple yet powerful syntax. Below are the
+  steps to use `share.typ`:
+items:
+- title: Add this repo as git submodule
+  description: >
+    By adding `share.typ` repo as git submodule, any upstream changes can be
+    pulled easily. You can modify several style variables and even override
+    existing function implementations to your heart's content.
+- title: Copy example files to repo root directory
+  description: >
+    Copy (and rename if you want) `example.typ` and `example.yml` to your repo
+    root directory. Use these files as template/starting point for your
+    content.
+- title: Compile content file
+  description: >
+    typst compiles to PDF by default. To compile typst to PNG, use `typst
+    compile <content-file>.typ <output>.png`.
