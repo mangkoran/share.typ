@@ -4,8 +4,8 @@ title: How to Use `share.typ` 📝
 author: "@mangkoran"
 abstract: > 
   With `share.typ`, you can quickly create beautiful short writings to share in
-  social media thanks to `typst.app` simple yet powerful syntax. Below are the
-  steps to start creating awesome post using `share.typ`:
+  social media thanks to Typst simple yet powerful syntax. Below are the steps
+  to start creating awesome post using `share.typ`:
 items:
 - title: Add mangkoran/share.typ as git submodule
   description: >
@@ -24,5 +24,5 @@ items:
     compile <your-post-content>.typ <output>.png`.
 - title: Share in social media
   description: >
-    Also let your followers know that the post was made using `typst.app`
-    (and `share.typ`) 😁
+    Also let your followers know that the post was made using Typst (and
+    `share.typ`) 😁
