@@ -38,12 +38,12 @@
     ])
   )
 
-  block(
-    width: 80%,
-    align(left, text(12pt)[
-      Written by #data.author
-    ])
-  )
+  // block(
+  //   width: 80%,
+  //   align(left, text(12pt)[
+  //     Written by #data.author
+  //   ])
+  // )
 }
 
 #let share_content(data) = [
@@ -59,12 +59,12 @@
   ]
 ]
 
-#let share_footer() = {
+#let share_footer(data) = {
   block(
     width: 100%,
     fill: luma(200),
     inset: 4pt,
     radius: 2pt,
-    [#h(1fr) #datetime.today().display("[day]/[month]/[year repr:last_two]")],
+    [#data.author #h(1fr) #datetime.today().display()],
   )
 }
